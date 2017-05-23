@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "955606404676",
+    "firebase_url": "https://misstimer-3004b.firebaseio.com",
+    "project_id": "misstimer-3004b",
+    "storage_bucket": "misstimer-3004b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:955606404676:android:3fd7a17ff9eae23f",
+        "android_client_info": {
+          "package_name": "hu.ait.missbeauty"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "955606404676-qce50ep6k2detcvacor5btljpbgmurg7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hu.ait.missbeauty",
+            "certificate_hash": "e5bd2c5037758689da93f02e53c3a8eab0d176c2"
+          }
+        },
+        {
+          "client_id": "955606404676-s9huoskov7a5dklcuq3vdco3mc0nni5o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf1NApSBlrUDYZ7_qPbfKrY8GfXl8JMJE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "955606404676-s9huoskov7a5dklcuq3vdco3mc0nni5o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

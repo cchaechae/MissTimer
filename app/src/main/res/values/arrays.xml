@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="itemOpenDate_array">
+        <item>12 Months</item>
+        <item>1 Month </item>
+        <item>2 Months </item>
+        <item>3 Months</item>
+        <item>4 Months </item>
+        <item>6 Months </item>
+        <item>9 Months </item>
+        <item>15 Months </item>
+        <item>18 Months </item>
+        <item>20 Months </item>
+        <item>24 Months</item>
+        <item>30 Months </item>
+        <item>36 Months </item>
+        <item>48 Months </item>
+        <item>60 Months</item>
+        <item>N/A</item>
+    </string-array>
+
+</resources>

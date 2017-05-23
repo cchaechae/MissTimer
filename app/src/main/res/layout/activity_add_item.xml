@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/add_item_layout"
+    tools:context=".AddItemActivity"
+    android:background="@color/colorPrimaryDark"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/addnew"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="New Product"
+        android:textSize="30sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center"
+        android:fontFamily="cursive"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="normal|bold" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/applogo"
+        android:id="@+id/imageView"
+        android:layout_weight="0.64" />
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_menu_camera"
+        android:background="@null"
+        android:id="@+id/btnAttach" />
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etName"
+            android:inputType="text"
+            android:textColor="@color/colorPrimary"
+            android:hint="@string/item_name"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="@string/expiration_date"
+            android:textColor="@color/colorAccent" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvExpDate"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/dateformat"/>
+
+            <ImageButton
+                android:id="@+id/btExtDate"
+                android:onClick="setExpDate"
+                app:srcCompat="@android:drawable/ic_menu_today"
+                android:background="@null"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Switch
+        android:id="@+id/openSwitch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginTop="5dp"
+        android:textSize="25sp"
+        android:textColor="@color/colorAccent"
+        android:switchMinWidth="100dp"
+        android:text="Open Status"
+        android:maxHeight="10dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="@color/colorAccent"
+            android:text="@string/open_date"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_alignParentRight="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvOpnDate"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/dateformat" />
+
+            <ImageButton
+                android:id="@+id/btOpnDate"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:onClick="setOpnDate"
+                app:srcCompat="@android:drawable/ic_menu_today"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        >
+        <TextView
+            android:layout_width="219dp"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="@color/colorAccent"
+            android:text="@string/after_opening_use"/>
+        <Spinner
+            android:spinnerMode="dialog"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAssistant"
+            android:id="@+id/spinnerAutoDate"
+            android:layout_gravity="center"
+            android:layout_width="139dp" />
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:id="@+id/etMemo"
+            android:inputType="textMultiLine"
+            android:scrollbars="vertical"
+            android:textColor="@color/colorPrimary"
+            android:hint="@string/memo"/>
+    </android.support.design.widget.TextInputLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnDelete"
+            android:textColor="@color/colorAccent"
+            android:contentDescription="Delete the item"
+            android:background="#FFC94B4D"/>
+
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:padding="10dp"
+            android:textColor="@color/colorAccent"
+            android:contentDescription="Product image"
+            android:background="@color/colorAssistant"
+            android:layout_alignParentRight="true"/>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
